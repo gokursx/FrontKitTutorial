@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/*
+
+CIS 145 Assignment 3: Web Development Tutorial Style Sheet
+Author: Aaron Hyde
+Date: March 31, 2023
+
+Filename: A3_Hyde_Aaron_Home.css
+
+*/
+
+/* HTML Styles */
+
+html {
+    background-image: url(A3_homeBackground.jpg);
+}
+
+/* Header Styles */
+
+header {
+    font-size: 3em;
+    text-align: center;
+    text-shadow: black 3px 2px 3px;
+    color: greenyellow;
+    background: royalblue;
+    line-height: 1.3em;
+}
+
+/* Heading Styles */
+
+h1 {
+    margin: 14px;
+    font-size: 1.5em;
+}
+
+/* Page Body Styles */
+
+body {
+    background-color: #FAEBD7;
+    margin-left: auto;
+    margin-right: auto;
+    width: 850px;
+    padding-bottom: 20px;
+ }
+
+ /* Figure and Image Styles */
+
+ figure {
+    width: fit-content;
+    height: fit-content;
+    margin-left: 17%;
+    margin-top: 20px;
+ }
+
+ img {
+    width: 550px;
+ }
+
+ figcaption {
+    text-align: center;
+    font-size: 1.8em;
+ }

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--
+
+CIS 145 Assignment 3: Web Development Tutorial
+Author: Gokul Krishna Radhakrishnan Nair
+Date:   March 31, 2023
+
+Filename: A3_Team9.html
+
+-->
+
+<meta charset="utf-8" />
+<title> Javascript WebDev Tutorial </title>
+<link href="A3_reset.css" rel="stylesheet" />
+<link href="A3_Team9.css" rel="stylesheet" />
+<script src="rb_formsubmit.js"></script>
+</head>
+
+<body>
+    <header>
+        Javascript Tutorial
+    </header>
+<section id="intro">
+    <article>
+        <figure>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ry6-yKpPZ18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <figcaption>Source: (Dr. Todd Wolfe Technology Training and Tutorials, 2021)</figcaption>
+        </figure>
+        <p> JavaScript is a lightweight, interpreted programming language. It is designed for creating 
+            network-centric applications. It is complimentary to and integrated with Java. JavaScript 
+            is very easy to implement because it is integrated with HTML. It is open and cross-platform.
+            Client-side JavaScript is the most common form of the language. The script should be included in or referenced by an HTML document for the code to be interpreted by the browser.
+
+It means that a web page need not be a static HTML, but can include programs that interact with the user, control the browser, and dynamically create HTML content.
+
+The JavaScript client-side mechanism provides many advantages over traditional CGI server-side scripts. For example, you might use JavaScript to check if the user has entered a valid e-mail address in a form field.
+
+The JavaScript code is executed when the user submits the form, and only if all the entries are valid, they would be submitted to the Web Server.
+            <ul>
+                <li>Javascript Syntax</li>
+                <li>Heading Tags</li>
+                <li>Attribute</li>
+                <li>HTML Forms</li>
+                <li>Meta Tag</li>
+            </ul></p>
+    </article>
+</section>
+
+<section id="backimg">
+    <h1> Javascript Syntax </h1>
+    <article>
+        <p>
+            JavaScript can be implemented using JavaScript statements that are placed within the  script ...  / script> HTML tags in a web page.
+
+            You can place the  script> tags, containing your JavaScript, anywhere within your web page, but it is normally recommended that you should keep it within the  head> tags.
+
+            The  script> tag alerts the browser program to start interpreting all the text between these tags as a script. A simple syntax of your JavaScript will appear as follows.
+        </p>
+        <p>
+  script ...>
+   JavaScript code
+< /script>
+        </p>
+The script tag takes two important attributes −
+
+Language − This attribute specifies what scripting language you are using. Typically, its value will be javascript. Although recent versions of HTML (and XHTML, its successor) have phased out the use of this attribute.
+
+Type − This attribute is what is now recommended to indicate the scripting language in use and its value should be set to "text/javascript".
+<img id="Syntax" src="javascript_sc_example.png" alt="Syntax" />   
+        </p>
+    </article>
+</section>
+
+<section id="shadow">
+    
+    
+    <h1> Javascript Variable </h1>
+    <article>
+        <p>
+            A JavaScript variable is simply a name of storage location. There are two types of variables in JavaScript : local variable and global variable.
+
+There are some rules while declaring a JavaScript variable (also known as identifiers).
+
+Name must start with a letter (a to z or A to Z), underscore( _ ), or dollar( $ ) sign.
+After first letter we can use digits (0 to 9), for example value1.
+JavaScript variables are case sensitive, for example x and X are different variables.
+        </p>
+    </article>
+</section>
+
+<section id="gradient">
+    <h1> Void Keyword</h1>
+    <article>
+        <p>
+            Void is an important keyword in JavaScript which can be used as a unary operator that appears before its single operand, which may be
+             of any type. This operator specifies an expression to be evaluated without returning a value.
+             The most common use of this operator is in a client-side javascript: URL, where it allows you to evaluate an expression for its 
+             side-effects without the browser displaying the value of the evaluated expression.
+             <img id="Void" src="Javascript.png" alt="Void" width="400" height="400"/> 
+
+        </p>
+    </article>
+</section>
+
+<section id="transformation">
+    <h1> Plugins </h1>
+    <article>
+        <p>
+            The JavaScript navigator object includes a child object called plugins. This object is an array, with one entry for each plug-in 
+            installed on the browser. The navigator.plugins object is supported only by Netscape, Firefox, and Mozilla only.
+            Each plug-in has an entry in the array. Each entry has the following properties −
+
+<p>name − is the name of the plug-in.  </br>
+filename − is the executable file that was loaded to install the plug-in.</br>
+description − is a description of the plug-in, supplied by the developer.</br>
+mimeTypes − is an array with one entry for each MIME type supported by the plug-in.</br>
+You can use these properties in a script to find out the installed plug-ins, and then using JavaScript, you can play appropriate multimedia file.
+</br>
+Example:
+ <br>
+<img id="Void" src="Plugin.png" alt="Void" width="400" height="400"/>
+</p>
+
+
+        </p>
+    </article>
+</section>
+
+<section id="table">
+    <h1> Javascript Function </h1>
+    <article>
+        <p>
+            A function is a group of reusable code which can be called anywhere in your program. This eliminates the need of writing the same code again and again. It helps programmers in writing modular codes. Functions allow a programmer to divide a big program into a number of small and manageable functions.
+
+Like any other advanced programming language, JavaScript also supports all the features necessary to write modular code using functions.
+        </br>
+        
+<strong>Function Definition</strong>
+<p> Before we use a function, we need to define it. The most common way to define a function in JavaScript is by using the function keyword, followed by a unique function name, a list of parameters (that might be empty), and a statement block surrounded by curly braces.</p>
+<img id="Function" src="Function.png" alt="Function" width="300" height="200"/>
+            
+
+            
+        </p>
+    </article>
+</section>
+
+<section id="gradient">
+    
+    <h1> Quiz - Javascript </h1>
+    <p></p>
+    <form action="Javavscript.html" method="get">
+        <fieldset id="cusInfo">
+            <legend> MCQ and True/False </legend>
+            
+            
+
+            <div class=formRow>
+                1. Which of the following keywords is used to define a variable in Javascript?
+                <br>
+            <input type="checkbox" name="pets" value="Dog"> Var
+            <br>
+            <input type="checkbox" name="pets" value="Cat"> Let<br>
+            <input type="checkbox" name="pets" value="Bird"> Both A and B<br>
+            <input type="checkbox" name="pets" value="Mouse"> None of the Above<br>
+            
+            </div>
+
+                
+            <div class=formRow>
+                2. Which one of the following also known as Conditional Expression:
+
+                <br>
+            <input type="checkbox" name="pets" value="Dog"> Alternative to if-else
+            <br>
+            <input type="checkbox" name="pets" value="Cat"> Switch statement
+            <br>
+            <input type="checkbox" name="pets" value="Bird"> If-then-else statement<br>
+            <input type="checkbox" name="pets" value="Mouse"> immediate if<br>
+            
+            </div>
+
+            <div class=formRow>
+                3.  In JavaScript, what is a block of statement?
+
+                <br>
+            <input type="checkbox" name="pets" value="Dog"> Conditional block
+            <br>
+            <input type="checkbox" name="pets" value="Cat"> block that combines a number of statements into a single compound statement 
+            <br>
+            <input type="checkbox" name="pets" value="Bird"> both conditional block and a single statement
+            <br>
+            <input type="checkbox" name="pets" value="Mouse"> block that contains a single statement
+            <br>
+            
+            </div>
+
+            <div class=formRow></div>
+                4. The "function" and " var" are known as:
+
+                <br>
+            <input type="checkbox" name="pets" value="Dog"> Keywords
+
+            <br>
+            <input type="checkbox" name="pets" value="Cat"> Data types
+
+            <input type="checkbox" name="pets" value="Bird"> Declaration statements 
+            <br>
+            <input type="checkbox" name="pets" value="Mouse"> Prototypes
+
+            <br>
+            
+            </div>
+
+            <div class=formRow>
+                5. Which of the following variables takes precedence over the others if the names are the same?
+
+
+                <br>
+            <input type="checkbox" name="pets" value="Dog"> Global variable
+
+            <br>
+            <input type="checkbox" name="pets" value="Cat"> The local element
+            <br>
+            <input type="checkbox" name="pets" value="Bird"> The two of the above
+
+            <br>
+            <input type="checkbox" name="pets" value="Mouse"> None of the above
+
+            <br>
+            
+            </div>
+
+            <div class="formRow">
+                <label> 6. Assignment operators are used to perform mathematical calculations, such as addition, subtraction, multiplication, and division.</label>
+                <fieldset class="optGroup">
+                    <label for="cYes">True</label>
+                    <input name="oCorrect" id="fYes" value="yes" type="radio" />
+                    <label for="cNo">False</label>
+                    <input name="oCorrect" id="cNo" value="no" type="radio" />
+                </fieldset>
+                
+                
+            </div>
+
+            
+            
+
+            <div class="formRow">
+                <label> 7. Web page authoring refers to the visual design and creation of the documents that appear on the World Wide Web.</label>
+                <fieldset class="optGroup">
+                    <label for="hYes">True</label>
+                    <input name="foodHot" id="hYes" value="yes" type="radio" />
+                    <label for="hNo">False</label>
+                    <input name="foodHot" id="hNo" value="no" type="radio" />
+                </fieldset>
+                
+                
+            </div>
+
+            <div class="formRow">
+                <label>8. JavaScript can be used to delete persistent cookies in a program.
+                </label>
+                <fieldset class="optGroup">
+                    <label for="hYes">True</label>
+                    <input name="foodHot" id="hYes" value="yes" type="radio" />
+                    <label for="hNo">False</label>
+                    <input name="foodHot" id="hNo" value="no" type="radio" />
+                </fieldset>
+                
+                
+            </div>
+
+            <div class="formRow">
+                <label>9. If a set of option buttons provides several choices along with "other" and is followed by a text box, you could add validation logic that verifies that the text box contains an entry, but only if the "other" option button is selected.
+
+                </label>
+                <fieldset class="optGroup">
+                    <label for="hYes">True</label>
+                    <input name="foodHot" id="hYes" value="yes" type="radio" />
+                    <label for="hNo">False</label>
+                    <input name="foodHot" id="hNo" value="no" type="radio" />
+                </fieldset>
+                
+                
+            </div>
+
+            <div class="formRow">
+                <label>10. Adding White Space to scripts may slow down the execution speed of a script.
+
+                    
+                </label>
+                <fieldset class="optGroup">
+                    <label for="hYes">True</label>
+                    <input name="foodHot" id="hYes" value="yes" type="radio" />
+                    <label for="hNo">False</label>
+                    <input name="foodHot" id="hNo" value="no" type="radio" />
+                </fieldset>
+                
+                
+            </div>
+
+            <div class="formRow">
+                <label for="rangeBox">Rate Content<br />
+                    
+                    
+                </label>
+                0
+
+                <input name="serviceRate" id="rangeBox" type="range"
+                       value="5" step="1" min="0" max="10"  />
+                10       
+            </div>
+
+            <label for="commBox">Comments</label>
+            <br>
+            <textarea name="custExp" id="commBox"></textarea> 
+            
+            <div>
+              
+                <input type="submit" value="Submit" class="submit-btn" />
+            </div>
+            
+        </fieldset>
+    </form>
+
+    
+        
+
+
+<div class="clear"></div>
+</body>
+</html>
+

@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+/*
+
+CIS 145 Assignment 3: Web Development Tutorial Style Sheet
+Author: Aaron Hyde
+Date: March 31, 2023
+
+Filename: A3_Hyde_Aaron1.css
+
+*/
+
+/* HTML Styles */
+
+html {
+    background-image: url(A3_backgroundImage.jpg);
+}
+
+/* Header Styles */
+
+header {
+    font-size: 3em;
+    text-align: center;
+    text-shadow: black 3px 2px 3px;
+    color: greenyellow;
+    background: royalblue
+}
+
+/* Heading Styles */
+
+h1 {
+    margin-left: 16px;
+    font-size: 24px;
+    color: mediumblue;
+    text-decoration: underline;
+}
+
+/* Page Body Styles */
+
+body {
+    background-color: #FAEBD7;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+ }
+
+/* Article Styles */
+
+article {
+    padding: 16px;
+    line-height: 1.2em;
+    margin-left: 12px;
+}
+
+/* List Styles */
+
+section#intro ul {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+div.col2 a {
+    color: white;
+}
+
+/* Aside Styles */
+
+aside {
+    text-align: center;
+    border: 3px dashed black;
+    width: fit-content;
+    margin-left: 80%;
+    margin-top: 3%;
+    padding: 3px;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: royalblue;
+    color: white;
+    text-shadow: black 2px 2px 3px;
+    padding: 5px;
+    line-height: 1.1em;
+}
+
+div.col1 {
+    text-align: center;
+}
+
+div.col2 {
+    margin-left: 12px;
+    margin-top: -50px;
+}
+
+/*Form Styles*/
+
+section#form form {
+    line-height: 1.4em;
+    border: 3px dotted;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 12px;
+    padding: 8px;
+    margin-left: 37%;
+}
+
+/* Quiz Styles */
+
+section#htmlQuiz ul {
+    list-style-type: none;
+}
+
+section#htmlQuiz {
+    clear: left;
+    width: fit-content;
+    height: fit-content;
+    margin: 16px;
+    padding: 10px;
+}
+
+section#htmlQuiz button {
+    margin-bottom: 10px;
+}
+
+form#quiz {
+    display: none;
+    line-height: 1.3em;
+}
+
+section#results {
+    width: fit-content;
+    height: fit-content;
+    margin: 16px;
+    padding: 10px;
+    line-height: 1.2em;
+    display: none;
+}

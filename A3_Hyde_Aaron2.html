@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--
+
+CIS 145 Assignment 3: Web Development Tutorial
+Author: Aaron Hyde
+Date:   March 31, 2023
+
+Filename: A3_Hyde_Aaron2.html
+
+-->
+
+<meta charset="UTF-8" />
+<title> CSS Tutorial </title>
+<link href="A3_reset.css" rel="stylesheet" />
+<link href="A3_Hyde_Aaron2.css" rel="stylesheet" />
+<script src="A3_Hyde_Aaron.js" defer></script>
+</head>
+
+<header>
+    CSS Tutorial
+</header>
+
+<main>
+    <body>
+        <section id="intro">
+            <article>
+                <figure>
+                    <iframe src="https://www.youtube.com/embed/8h4RwiL8rmg"></iframe>
+                    <figcaption>Source: (Dr. Todd Wolfe Technology Training and Tutorials, 2021)</figcaption>
+                </figure>
+                <p>
+                    Cascading Style Sheets (CSS) can be used to change the appearance of 
+                    HTML pages by creating and applying a style sheet. This tutorial will 
+                    introduce the basics of implementing CSS with a short video and demonstrate: 
+                    <ul>
+                        <li>Background Images</li>
+                        <li>Shadows</li>
+                        <li>Gradients</li>
+                        <li>Transformations</li>
+                        <li>Table Styling</li>
+                    </ul></p>
+            </article>
+        </section>
+
+        <section id="backimg">
+            <h1> Background Images </h1>
+            <article>
+                <p>
+                    To add a background image to our page we can use <em>html 
+                    { background-image: url(filename); }</em>. Inserting the file name <em>A3_backgroundImage.jpg</em> 
+                    would recreate the background image seen on this page (the image file 
+                    must also be stored in the same folder as the html file).
+                </p>
+            </article>
+        </section>
+
+        <section id="shadow">
+            <h1> Shadows </h1>
+            <article>
+                <p>
+                    Shadows can be added to text using a text shadow or any block element 
+                    using a box shadow to add depth, contrast and emphasis. For example, the 
+                    heading: <h2>NO SHADOW</h2> has no shadow, whereas the heading: <h3>SHADOW</h3> has a red 
+                    shadow. This can be done by specifying the heading tag 
+                    (h1, h2, article > h1 etc.) as follows. <em>desired tag { text-shadow: color x y blur; }</em> 
+                    Where color is the color of the shadow, x is the x-offset, y is the y-offset, and blur is the 
+                    amount of blur applied to the shadow.
+                </p>
+            </article>
+        </section>
+
+        <section id="gradient">
+            <h1> Gradients </h1>
+            <article>
+                <p>
+                    Gradients blend colors together which can result in interesting effects. 
+                    <em>{ background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet); }</em> 
+                    produces the following rainbow gradient effect: <div class="linearGradient"></div> Note that the value 
+                    of degrees determines which direction the gradient will transition 
+                    (top to bottom, left to right, diagonally etc). When using 
+                    multiple colours in a gradient be sure to place them in a comma separated 
+                    list. We can also create a starburst effect with radial gradients using <em>{ background: radial-gradient(red, orange, yellow, green, blue, indigo, violet); }</em>.
+                    <div class="radialGradient"></div>
+                </p>
+            </article>
+        </section>
+
+        <section id="transformation">
+            <h1> Transformations </h1>
+            <article>
+                <p>
+                    Transformations can be performed on images using the translate, rotate 
+                    and skew functions. <em>{ transform: translate( X, Y ) }</em> <em>{ transform: skew( X, Y ) }</em> and <em>{ transform: rotate( degrees ) }</em> 
+                    will perform the specified transformation based on the given X and Y 
+                    values (pixels of translation, degrees of skew, degrees of clockwise 
+                    rotation or negative degrees of counter clockwise rotation). 
+                    <figure id="translate">
+                        <img id="translate" src="A3_smiley.jpg" alt="Smiley Face" />
+                    </figure>
+                    <figure id="skew">
+                        <img id="skew" src="A3_smiley.jpg" alt="Smiley Face" />
+                    </figure>
+                    <figure id="rotate">
+                        <img id="rotate" src="A3_smiley.jpg" alt="Smiley Face" />
+                    </figure>
+                </p>
+            </article>
+        </section>
+
+        <section id="table">
+            <h1> Table Styles </h1>
+            <article>
+                <p>
+                    CSS can also be used to style tables. <em>{ border-spacing: value; }</em> can be used 
+                    to change the border spacing of the table based on the value provided. 
+                    <em>{ border-collapse: collapsed; }</em> is used to collapse table borders and remove 
+                    the double border appearance.
+                    <table id="base">
+                        <caption>Table with 2px solid borders</caption>
+                        <tr>
+                            <th>Name</th>
+                            <th>Favorite Color</th>
+                        </tr>
+                        <tr>
+                            <td>James Knight</td>
+                            <td>Green</td>
+                        </tr>
+                        <tr>
+                            <td>Leroy Raines</td>
+                            <td>Purple</td>
+                        </tr>
+                        <tr>
+                            <td>Julie Kingsley</td>
+                            <td>Blue</td>
+                        </tr>
+                        <tr>
+                            <td>Glenda Garner</td>
+                            <td>Yellow</td>
+                        </tr>
+                    </table>
+                    <table id="spacing">
+                        <caption>Border spacing of 5 px</caption>
+                        <tr>
+                            <th>Name</th>
+                            <th>Favorite Color</th>
+                        </tr>
+                        <tr>
+                            <td>James Knight</td>
+                            <td>Green</td>
+                        </tr>
+                        <tr>
+                            <td>Leroy Raines</td>
+                            <td>Purple</td>
+                        </tr>
+                        <tr>
+                            <td>Julie Kingsley</td>
+                            <td>Blue</td>
+                        </tr>
+                        <tr>
+                            <td>Glenda Garner</td>
+                            <td>Yellow</td>
+                        </tr>
+                    </table>
+                    <table id="collapse">
+                        <caption>Collapsed borders</caption>
+                        <tr>
+                            <th>Name</th>
+                            <th>Favorite Color</th>
+                        </tr>
+                        <tr>
+                            <td>James Knight</td>
+                            <td>Green</td>
+                        </tr>
+                        <tr>
+                            <td>Leroy Raines</td>
+                            <td>Purple</td>
+                        </tr>
+                        <tr>
+                            <td>Julie Kingsley</td>
+                            <td>Blue</td>
+                        </tr>
+                        <tr>
+                            <td>Glenda Garner</td>
+                            <td>Yellow</td>
+                        </tr>
+                    </table>
+                </p>
+            </article>
+        </section>
+        <section id="cssQuiz">
+            <button onclick="startQuiz()">Start Quiz</button>
+            <form id="quiz">
+                <label>1) The background image of this page can be recreated <u>only</u> using <em>{background-image: url(filename); }</em>:</label> <br>
+                <input type="radio" name="q1" value="t">
+                <label>True</label> <br>
+                <input type="radio" name="q1" value="f">
+                <label>False</label> <br>
+                <br><label>2) Shadows <u>cannot</u> be a color:</label> <br>
+                <input type="radio" name="q2" value="t">
+                <label>True</label> <br>
+                <input type="radio" name="q2" value="f">
+                <label>False</label> <br>
+                <br><label>3) When using gradients with multiple colors a comma separated list is needed:</label> <br>
+                <input type="radio" name="q3" value="t">
+                <label>True</label> <br>
+                <input type="radio" name="q3" value="f">
+                <label>False</label> <br>
+                <br><label>4) <em>rotate(270deg)</em> and <em>rotate(-90deg)</em> would result in the same orientation:</label> <br>
+                <input type="radio" name="q4" value="t">
+                <label>True</label> <br>
+                <input type="radio" name="q4" value="f">
+                <label>False</label> <br>
+                <br><label>5) <em>border-collapse: collapsed;</em> will remove <u>all</u> borders from the table:</label> <br>
+                <input type="radio" name="q5" value="t">
+                <label>True</label> <br>
+                <input type="radio" name="q5" value="f">
+                <label>False</label> <br>
+                <br><label>6) ______ is used to display a background image in CSS:</label> <br>
+                <input type="radio" name="q6" value="a">
+                <label>a. background image { filename }</label> <br>
+                <input type="radio" name="q6" value="b">
+                <label>b. html { background-image url( filename )</label> <br>
+                <input type="radio" name="q6" value="c">
+                <label>c. background-image = url( filename )</label> <br>
+                <input type="radio" name="q6" value="d">
+                <label>d. html { background-image: url( filename ); }</label> <br>
+                <br><label>7) Shadows can be added to which of the following elements?</label> <br>
+                <input type="radio" name="q7" value="a">
+                <label>a. Paragraph text</label> <br>
+                <input type="radio" name="q7" value="b">
+                <label>b. Figure box</label> <br>
+                <input type="radio" name="q7" value="c">
+                <label>c. Text box</label> <br>
+                <input type="radio" name="q7" value="d">
+                <label>d. All of the above</label> <br>
+                <br><label>8) If a linear gradient has a directional value of 45 degrees which direction will the transition be?</label> <br>
+                <input type="radio" name="q8" value="a">
+                <label>a. Diagonal</label> <br>
+                <input type="radio" name="q8" value="b">
+                <label>b. Left to Right</label> <br>
+                <input type="radio" name="q8" value="c">
+                <label>c. Top to Bottom</label> <br>
+                <input type="radio" name="q8" value="d">
+                <label>d. Outward from the center</label> <br>
+                <br><label>9) Which of the following is <u>not</u> a proper CSS transformation:</label> <br>
+                <input type="radio" name="q9" value="a">
+                <label>a. Skew</label> <br>
+                <input type="radio" name="q9" value="b">
+                <label>b. Invert</label> <br>
+                <input type="radio" name="q9" value="c">
+                <label>c. Rotation</label> <br>
+                <input type="radio" name="q9" value="d">
+                <label>d. Translation</label> <br>
+                <br><label>10) The line <em>border-spacing: 5px</em> will:</label> <br>
+                <input type="radio" name="q10" value="a">
+                <label>a. Set the border spacing to 5 pixels</label> <br>
+                <input type="radio" name="q10" value="b">
+                <label>b. Set the border width to 5 pixels</label> <br>
+                <input type="radio" name="q10" value="c">
+                <label>c. Move the table to the right by 5 pixels</label> <br>
+                <input type="radio" name="q10" value="d">
+                <label>d. Change the color of the borders</label> <br>
+            </form>
+            <br><button onclick="showCssResults()">Submit Quiz</button>
+            
+        </section>
+
+        <section id="results">
+            <h2>Quiz Results:</h2>
+            <div id="score"></div>
+            <div id="key"></div>
+        </section>
+        <div class="clear"></div>
+        <footer>
+            <div class="col1">
+                Author: Aaron Hyde <br>
+                Address: 123 Sesame St. Abbotsford B.C. <br>
+                Phone: 987-654-3210
+            </div>
+        </footer>
+    </body>
+</main>
+</html>

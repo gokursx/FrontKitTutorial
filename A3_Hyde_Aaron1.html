@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--
+
+CIS 145 Assignment 3: Web Development Tutorial
+Author: Aaron Hyde
+Date:   March 31, 2023
+
+Filename: A3_Hyde_Aaron1.html
+
+-->
+
+<meta charset="UTF-8" />
+<title>HTML Tutorial</title>
+<link href="A3_reset.css" rel="stylesheet" />
+<link href="A3_Hyde_Aaron1.css" rel="stylesheet" />
+<script src="A3_Hyde_Aaron.js" defer></script>
+</head>
+
+<header>
+    HTML Tutorial
+</header>
+
+<main>
+    <body>
+        <section id="intro">
+            <article>
+                <p>
+                    HyperText Markup Language (HTML) is the foundation for creating a webpage. 
+                    HTML uses a collection of tags to determine how the content of a webpage is 
+                    divided and organized. This tutorial will discuss the following HTML topics:
+                    <ul>
+                        <li>Basic page layout</li>
+                        <li>Header</li>
+                        <li>Aside</li>
+                        <li>Footer</li>
+                        <li>Forms</li>
+                    </ul></p>
+            </article>
+        </section>
+
+        <section id="basicLayout">
+            <h1> Basic Layout </h1>
+            <article>
+                <p>
+                    The basic layout of an HTML document would resemble the following:
+<pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;meta charset = ”UTF-8” /&gt;
+    &lt;title&gt; Title of the page &lt;/title&gt;
+    &lt;/head&gt;
+    &lt;header&gt;
+        Header of the page
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;body&gt;
+            &lt;article&gt;
+                &lt;p&gt;
+                    Paragraph content
+                &lt;/p&gt;
+            &lt;/article&gt;
+        &lt;/body&gt;
+    &lt;/main&gt;
+    &lt;/html&gt;
+</pre>
+                    In general terms, HTML uses opening tags &lt;tagname&gt; and closing tags &lt;/tagname&gt; to 
+                    define how the content within the tags should behave. The entire HTML document is 
+                    enclosed with the &lt;html&gt; &lt;/html&gt; tags which is then organized by the semantic tags that follow. 
+                    The &lt;head&gt; &lt;/head&gt; contains the title of the page in addition to any necessary file 
+                    links or meta data. The &lt;main&gt; &lt;/main&gt; defines the primary content of the page that is 
+                    generally contained within a &lt;body&gt; &lt;/body&gt; element. The body element can be further 
+                    divided into articles and paragraphs with the &lt;article&gt; &lt;/article&gt; and &lt;p&gt; &lt;/p&gt; 
+                    tags respectively.
+                </p>
+            </article>
+        </section>
+
+        <section id="header">
+            <h1> Header </h1>
+            <article>
+                <p>
+                    The header appears at the top of the webpage and generally functions as both the page title and the primary navigation 
+                    menu of the page. The header is most likely the first point of contact for a viewer which 
+                    makes it an important area to consider. For example, the header of this page can be created with 
+                    &lt;header&gt; HTML Tutorial &lt;/header&gt;.
+                </p>
+            </article>
+        </section>
+
+        <section id="aside">
+            <h1> Aside </h1>
+            <article>
+                <p>
+                    The aside element is used to display content separately from the main page content.
+                    A webpage for a recipe might have an aside with links to desserts that complement 
+                    the recipe dish. The desserts are related to the webpage being viewed but 
+                    including the dessert recipes in the page for the main dish would be inappropriate. 
+                    The aside element is created with the &lt;aside&gt; &lt;/aside&gt; tags.
+                </p>
+
+                <aside>
+                    This is being displayed as an aside.
+                </aside>
+
+            </article>
+        </section>
+
+        <section id="footer">
+            <h1> Footer </h1>
+            <article>
+                <p>
+                    The footer element appears at the very bottom of the page and generally contains contact 
+                    information or links to other sections of the webpage. A restaurant page might 
+                    have their phone number and address appear in the footer so viewers can easily call and place 
+                    an order after scrolling through the page or navigate to another section of the menu after 
+                    browsing their initial choice. The footer content should be placed within the &lt;footer&gt; &lt;/footer&gt; tags.
+                    This page has a footer with some example information that can be seen below.
+                </p>
+            </article>
+        </section>
+
+        <section id="form">
+            <h1> Forms </h1>
+            <article>
+                <p>
+                    Forms are useful for receiving an input from the viewer. This can be done in a number of 
+                    ways including input boxes, radio buttons, selection lists, check boxes and sliders which will 
+                    all be demonstrated in this section. Input boxes create a field for users to type information 
+                    such as addresses and phone numbers. Radio buttons allow the user to select one of the available 
+                    options by clicking the button to highlight and indicate their selection. A selection list provides 
+                    a drop down menu of options to select. A check box functions similarly to a radio button with the 
+                    added option of highlighting multiple selections. Lastly, sliders provide a control that slides along 
+                    a horizontal menu which can be used to indicate a selection within a range such as a rating 
+                    from 1 to 10.
+                </p>
+                <form>
+                    <h2> <u> Form Inputs </u> </h2>
+                    <br><label><u>Input Box</u>:</label> <br>
+                    <input type="text" id="inputBox" placeholder="Write input here"/> <br>
+                    <br><label><u>Radio Buttons</u>:</label> <br>
+                    <input type="radio" name="radioDemo" value="optiona">
+                    <label> Option a </label> <br>
+                    <input type="radio" name="radioDemo" value="optionb">
+                    <label> Option b </label> <br>
+                    <input type="radio" name="radioDemo" value="optionc">
+                    <label> Option c </label> <br>
+                    <br><label><u>Selection List</u>:</label> <br>
+                    <select name="selectionList">
+                        <option value="default" selected> Please make a selection </option>
+                        <option value="option1"> Option 1 </option>
+                        <option value="option2"> Option 2 </option>
+                        <option value="option3"> Option 3 </option>
+                    </select> <br>
+                    <br><label><u>Check Boxes</u> (Select all that apply):</label><br>
+                    <input type="checkbox">
+                    <label> Red </label><br>
+                    <input type="checkbox">
+                    <label> Green </label><br>
+                    <input type="checkbox">
+                    <label> Blue </label><br>
+                    <br><label><u>Slider</u>:</label><br>
+                    <input type="range" step="1" value="0" min="0" max="10" />
+                </form>
+            </article>
+        </section>
+
+        <section id="htmlQuiz">
+            <button onclick="startQuiz()">Start Quiz</button>
+            <form id="quiz">
+                <label>1) The head tag contains the page title and meta data:</label> <br>
+                <input type="radio" name="q1" value="t">
+                <label>True</label> <br>
+                <input type="radio" name="q1" value="f">
+                <label>False</label> <br>
+                <br><label>2) The header generally functions as the page title and primary navigation menu:</label> <br>
+                <input type="radio" name="q2" value="t">
+                <label>True</label> <br>
+                <input type="radio" name="q2" value="f">
+                <label>False</label> <br>
+                <br><label>3) The aside element creates a pop up window to display the aside content:</label> <br>
+                <input type="radio" name="q3" value="t">
+                <label>True</label> <br>
+                <input type="radio" name="q3" value="f">
+                <label>False</label> <br>
+                <br><label>4) The footer commonly contains contact and author information:</label> <br>
+                <input type="radio" name="q4" value="t">
+                <label>True</label> <br>
+                <input type="radio" name="q4" value="f">
+                <label>False</label> <br>
+                <br><label>5) Forms provide a very limited ability to receive inputs from a user:</label> <br>
+                <input type="radio" name="q5" value="t">
+                <label>True</label> <br>
+                <input type="radio" name="q5" value="f">
+                <label>False</label> <br>
+                <br><label>6) Which of the following tags <u>did not</u> appear in the basic layout?</label> <br>
+                <input type="radio" name="q6" value="a">
+                <label>a. main</label> <br>
+                <input type="radio" name="q6" value="b">
+                <label>b. article</label> <br>
+                <input type="radio" name="q6" value="c">
+                <label>c. div</label> <br>
+                <input type="radio" name="q6" value="d">
+                <label>d. p</label> <br>
+                <br><label>7) Which of the following elements is <u>not</u> found in the header?</label> <br>
+                <input type="radio" name="q7" value="a">
+                <label>a. article</label> <br>
+                <input type="radio" name="q7" value="b">
+                <label>b. title</label> <br>
+                <input type="radio" name="q7" value="c">
+                <label>c. meta</label> <br>
+                <input type="radio" name="q7" value="d">
+                <label>d. All of the above</label> <br>
+                <br><label>8) The aside element is best used to:</label> <br>
+                <input type="radio" name="q8" value="a">
+                <label>a. Define a paragraph</label> <br>
+                <input type="radio" name="q8" value="b">
+                <label>b. Display related content separately from the main content</label> <br>
+                <input type="radio" name="q8" value="c">
+                <label>c. Link a different website to the page</label> <br>
+                <input type="radio" name="q8" value="d">
+                <label>d. Create a media player</label> <br>
+                <br><label>9) Which of the following is <u>not</u> found in the footer?</label> <br>
+                <input type="radio" name="q9" value="a">
+                <label>a. Author information</label> <br>
+                <input type="radio" name="q9" value="b">
+                <label>b. Contact information</label> <br>
+                <input type="radio" name="q9" value="c">
+                <label>c. Additional navigation links</label> <br>
+                <input type="radio" name="q9" value="d">
+                <label>d. Aside content</label> <br>
+                <br><label>10) Which form control allows a user to indicate multiple selections?</label> <br>
+                <input type="radio" name="q10" value="a">
+                <label>a. Check box</label> <br>
+                <input type="radio" name="q10" value="b">
+                <label>b. Slider</label> <br>
+                <input type="radio" name="q10" value="c">
+                <label>c. Radio</label> <br>
+                <input type="radio" name="q10" value="d">
+                <label>d. Selection list</label> <br>
+            </form>
+            <br><button onclick="showHtmlResults()">Submit Quiz</button>
+        </section>
+
+        <section id="results">
+            <h2>Quiz Results:</h2>
+            <div id="score"></div>
+            <div id="key"></div>
+        </section>
+        <footer>
+            <div class="col1">
+                Author: Aaron Hyde <br>
+                Address: 123 Sesame St. Abbotsford B.C. <br>
+                Phone: 987-654-3210
+            </div>
+            <div class="col2">
+                <nav id="menu">
+                    <ul>
+                        <li><u>Menu</u></li>
+                        <li><a href="#">Appetizers</a></li>
+                        <li><a href="#">Lunch</a></li>
+                        <li><a href="#">Main Courses</a></li>
+                        <li><a href="#">Dessert</a></li>
+                        <li><a href="#">Beverages</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </body>
+</main>
+</html>

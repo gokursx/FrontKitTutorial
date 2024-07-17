@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+/*
+
+CIS 145 Assignment 3: Web Development Tutorial Style Sheet
+Author: Team9
+Date: March 31, 2023
+
+Filename: A3_Team9.css
+
+*/
+
+/* HTML Styles */
+
+html {
+    background-image: url(A3_backgroundImage.jpg);
+}
+
+/* Header Styles */
+
+header {
+    font-size: 3em;
+    text-align: center;
+    text-shadow: black 3px 2px;
+    color: greenyellow;
+    background: royalblue
+}
+
+/* Heading Styles */
+
+h1 {
+    margin-left: 12px;
+    font-size: 24px;
+    color: mediumblue;
+    text-decoration: underline;
+}
+
+article > h2 {
+    margin: 5px 0px 5px;
+    font-size: 20px;
+    color: rgb(30, 101, 255);
+}
+
+article > h3 {
+    margin: 5px 0px 5px;
+    font-size: 20px;
+    text-shadow: red 1px 1px 3px;
+    color: rgb(30, 101, 255);
+}
+
+/* Page Body Styles */
+
+body {
+    background-color: #FAEBD7;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+ }
+
+section#backimg {
+    clear: right;
+ }
+
+section#table {
+    clear: center;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Article Styles */
+
+article {
+    padding: 12px;
+}
+
+/* List Styles */
+
+ul {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+/* Figure and Image Styles */
+
+div.linearGradient {
+    margin: 12px;
+    width: 700px;
+    height: 180px;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+}
+
+div.radialGradient {
+    margin: 12px;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(red, orange, yellow, green, blue, indigo, violet);
+}
+
+section#intro figure {
+    height: fit-content;
+    width: fit-content;
+    float: right;
+}
+
+section#intro figcaption {
+    margin-top: -12px;
+    margin-left: 12px;
+}
+
+section#transformation img {
+    height: 200px;
+    width: 200px;
+}
+
+section#transformation figure {
+    height: fit-content;
+    width: fit-content;
+    margin: 15px;
+}
+
+section#transformation figure#translate {
+    border: 3px solid black;
+    float: left;
+}
+
+section#transformation img#translate {
+    transform: translate(-15px, 15px);
+}
+
+section#transformation figure#skew {
+    border: 3px solid black;
+    float: left;
+}
+
+section#transformation img#skew {
+    transform: skew(15deg, 10deg);
+}
+
+section#transformation figure#rotate {
+    border: 3px solid black;
+    float: left;
+}
+
+section#transformation img#rotate {
+    transform: rotate(70deg);
+}
+
+/* Table Styles */
+
+table, th, td {
+    margin: 12px;
+    border: 2px solid;
+    text-align: center;
+}
+
+th, td {
+    padding: 3px;
+}
+
+table#base {
+    float: left;
+}
+
+table#spacing {
+    border-spacing: 5px;
+    float: left;
+}
+
+table#collapse{
+    float:left;
+    border-collapse: collapse;
+}
+
+/* Video Player Styles */
+
+iframe {
+    margin: 12px;
+    height: 300px;
+    width: 500px;
+}
